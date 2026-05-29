@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강남 셔츠룸 | 마포의 새로운 기준, 정보</title>
+    <link rel="canonical" href="https://sf-t3-1779642675702-090.pages.dev/info">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="강남 셔츠룸을 마포에서 만납니다. 기존 유흥의 문법을 깨트린 압도적 퀄리티. 마포 셔츠룸의 모든 정보를 가장 직설적이고 고급스럽게 전달합니다.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 마포 유흥, 마포 룸살롱, 고급 셔츠룸, 서울 밤문화, 마포 데이트코스, 셔츠룸 추천, 마포 호스트바">
+    <meta name="author" content="Editorial Luxury Team">
+    <meta name="robots" content="index, follow">
+    <!-- Design System Indicators -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+
+    <style>
+        /* -----------------------------------------------------------
+           DESIGN SYSTEM: NOIR-GOLD
+           Concept: Editorial Luxury / Provocative Tone
+           ----------------------------------------------------------- */
+        :root {
+            --bg-color: #050505;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #D4AF37;
+            --accent-gold-dim: rgba(212, 175, 55, 0.2);
+            --border-color: #1f1f1f;
+            --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --spacing-unit: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent-gold);
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(5, 5, 5, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            color: var(--text-primary);
+        }
+
+        .logo span {
+            color: var(--accent-gold);
+        }
+
+        .desktop-nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        .desktop-nav a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .desktop-nav a:hover, .desktop-nav a.active {
+            color: var(--accent-gold);
+        }
+
+        .tel-btn {
+            border: 1px solid var(--accent-gold);
+            padding: 8px 20px;
+            color: var(--accent-gold);
+            font-size: 0.9rem;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        .tel-btn:hover {
+            background: var(--accent-gold);
+            color: #000;
+        }
+
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: 0.3s;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .mobile-menu a {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 180px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+
+        .hero-sub {
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Content Cards */
+        .info-card {
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .info-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+
+        .info-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list span.label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .info-list span.value {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-large {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: #000;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cta-large:hover {
+            background: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding-top: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">MAPO<span>NOIR</span></a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/gallery">갤러리</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:010-0000-0000" class="tel-btn">RESERVATION</a>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/" onclick="toggleMenu()">홈</a>
+        <a href="/info" onclick="toggleMenu()">정보</a>
+        <a href="/gallery" onclick="translateMenu()">갤러리</a>
+        <a href="/contact" onclick="toggleMenu()">문의</a>
+        <a href="tel:010-0000-0000" style="color: var(--accent-gold);" onclick="toggleMenu()">예약하기</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <span class="hero-sub">Information & Guide</span>
+            <h1>강남 셔츠룸,<br>이제 마포에서 정의됩니다.</h1>
+            <p style="max-width: 600px; margin: 0 auto;">
+                유흥의 중심이 이동했습니다.<br>
+                더 이상 강남까지 갈 필요가 없는 이유.<br>
+                마포의 밤을 지배하는 압도적 퀄리티와 서비스의 모든 것.
+            </p>
+        </section>
+
+        <!-- Core Info Section -->
+        <section class="section container">
+            <div class="grid-2">
+                <div>
+                    <h2>01. 공간의 철학</h2>
+                    <p>
+                        우리는 단순한 술자리가 아닌, <span class="highlight">예술적 경험</span>을 제공합니다.<br>
+                        마포구의喧嚣 (소요) 속에서 고립된 프라이빗 존을 구축했습니다.<br>
+                        강남 셔츠룸 특유의 과시성을 배제하고, 본질적인 '품격'에 집중했습니다.
+                    </p>
+                    <p>
+                        조명一つ, 의자 하나까지 큐레이션된 공간은 당신의 감각을 깨우기에 충분합니다.<br>
+                        здесь нет места для посредственности. (평범함은 허용되지 않습니다.)
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>Facility Spec</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="label">LOCATION</span>
+                            <span class="value">Seoul, Mapo-gu (Private Access)</span>
+                        </li>
+                        <li>
+                            <span class="label">PARKING</span>
+                            <span class="value">Valet Parking Available</span>
+                        </li>
+                        <li>
+                            <span class="label">CAPACITY</span>
+                            <span class="value">Max 12 Persons / Private Room</span>
+                        </li>
+                        <li>
+                            <span class="label">DRESS CODE</span>
+                            <span class="value">Smart Casual / No Sportswear</span>
+                        </li>
+                        <li>
+                            <span class="label">SMOKING</span>
+                            <span class="value">Designated Area Only</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Details -->
+        <section class="section container">
+            <h2 style="text-align: center; margin-bottom: 60px;">02. 서비스 프로토콜</h2>
+            <div class="grid-3">
+                <div class="info-card">
+                    <h3>Premium Selection</h3>
+                    <p>
+                        단순한 외모가 아닌, 대화의 깊이를 아는 전문가들을 엄선합니다.<br>
+                        고객의 취향과 그날의 무드를 완벽하게 이해하는 매칭 시스템을 자랑합니다.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>Sommelier Service</h3>
+                    <p>
+                        주류는 단순한 음료가 아닌 공간의 분위기입니다.<br>
+                        희귀 위스키부터 최고급 샴페인까지, 당신의 밤을 완성할 최고의 한 잔을 제안합니다.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>Absolute Privacy</h3>
+                    <p>
+                        마포 셔츠룸 최대의 고민인 보안 문제를 해결했습니다.<br>
+                        엘리베이터 직접 연결 및 독립된 동선을 통해 누구의 눈길도 피합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section container">
+            <h2 style="margin-bottom: 40px;">03. Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    예약 없이 방문 가능한가요?
+                    <span style="color: var(--accent-gold);">+</span>
+                </div>
+                <div class="faq-answer">
+                    당사의 공간은 완전을 위해 완전 예약제로 운영됩니다. 런웨이 워크처럼 준비된 무대를 위해, 최소 2 시간 전에 예약을 권장합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    강남 셔츠룸과의 차이점은 무엇인가요?
+</body>
+</html>
